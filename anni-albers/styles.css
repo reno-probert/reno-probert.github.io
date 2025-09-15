@@ -36,7 +36,7 @@ p.callout {
 }
 
 #row16, #row17 {
-   margin-left: calc(100% *5/6);
+   margin-left: calc(100% *3/6);
    margin-bottom: 1em;
    text-align: right;
 }
