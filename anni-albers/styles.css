@@ -13,9 +13,13 @@ h2 {
 p {
     font-size: 1rem;
     line-height: 1.5rem;
+    width: 75%
 }
 p.callout {
     font-size: 1.2rem;
     font-style: italic;
     line-height: 1rem;
+}
+#row1 {
+    margin-left: calc(100% *1/6;
 }
