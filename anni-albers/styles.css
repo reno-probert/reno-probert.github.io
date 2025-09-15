@@ -42,19 +42,19 @@ p.callout {
 
 #secondlayout main {
     display: grid;
-    grid-template-columns: repeat{6, calc(100% / 6)};
+    grid-template-columns: repeat(6, calc(100% / 6));
     grid-template-rows: repeat (14, auto);
     grid-template-areas: 
     'title title title title title title'
-    '. p1 p1 p2 p2 .'
-    'p3 p3 . . c1 c1'
+    'p1 p1 . p2 p2 .'
+    '. p3 p3 . c1 c1'
     '. p4 p4 p4 . .'  
-    'p5 p5 . . c2 c2'
+    '. p5 p5 . c2 c2'
     '. p6 p6 p6 . .'
-    'p7 p7 . . c3 c3'
+    '. p7 p7 . c3 c3'
     '. p8 p8 p8 . .'
-    'p9 p9 . . c4 c4'
-    '. p10 p10 p11 p11 .'
+    '. p9 p9 . c4 c4'
+    'p10 p10 . p11 p11 .'
     '. . . . p12 p12'
     '. . . p13 p13 p13'
     '. . . p14 p14 p14'
@@ -86,4 +86,7 @@ p.callout {
 
 #secondlayout p {
     width: 100%;
+}
+#secondlayout p.callout {
+    padding-left: 0;
 }
