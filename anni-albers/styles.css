@@ -27,10 +27,9 @@ p.callout {
     margin-right: 2em;
 }
 
-#row1 p,
+
 #row2 p,
 #row4 p,
-#row5 p,
 #row6 p,
 #row8 p,
 #row9 p,
@@ -39,4 +38,9 @@ p.callout {
 #row14 p,
 #row15 p {
     margin-left: calc(100%/6);
+}
+
+#row1 p,
+#row5 p {
+    margin-right: calc(100% * 2/6);
 }
