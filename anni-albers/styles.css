@@ -15,6 +15,12 @@ p {
     line-height: 1.5rem;
     width: 50%
 }
+footer {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 p.callout {
     font-size: 1.4rem;
     font-style: italic;
@@ -37,7 +43,4 @@ p.callout {
 
 #row16, #row17 {
    margin-left: calc(100% *3/6);
-   margin-bottom: 1em;
-   text-align: center;
-   font-size: 1.4rem;
 }
