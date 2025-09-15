@@ -16,9 +16,9 @@ p {
     width: 75%
 }
 p.callout {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-style: italic;
-    line-height: 1rem;
+    line-height: 2rem;
     float: right;
     text-align: right;
     padding-left: 3em;
