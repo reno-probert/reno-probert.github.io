@@ -14,3 +14,8 @@ p {
     font-size: 1rem;
     line-height: 1.5rem;
 }
+p.callout {
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1rem;
+}
