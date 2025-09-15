@@ -36,7 +36,11 @@ p.callout {
 }
 
 #row16, #row17 {
-   margin-right: calc(100% *1/6);
+   margin-left: calc(100% *5/6);
    margin-bottom: 1em;
    text-align: right;
+}
+
+#row16 {
+    font-style: bold;
 }
