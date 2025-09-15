@@ -20,6 +20,8 @@ p.callout {
     font-style: italic;
     line-height: 1rem;
     float: right;
+    text align: right;
+    padding-left: 3em;
 }
 #row1 p,
 #row2 p,
