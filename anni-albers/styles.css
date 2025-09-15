@@ -34,3 +34,8 @@ p.callout {
 #row3, #row4, #row6, #row7, #row9, #row10, #row12, #row13 {
    margin-left: calc(100% *2/6);
 }
+
+#row16, #row17 {
+   margin-left: calc(100% *3/6);
+   margin-bottom: 1em;
+    width: 75%;}
