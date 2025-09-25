@@ -11,7 +11,6 @@
     <!-- external and internal CSS -->
     <link rel="stylesheet" href="styles.css" media="all">
     <style>
-
         textarea {
             border: none;
             padding: 3px;
@@ -19,20 +18,23 @@
         }
 
         ul {
-            color: darkslategray
+            color: darkslategray;
+            font-style: strong;
         }
+
         h1 {
-                    color: white;
-                    text-align: center;
-                    background-color: slategray;
-                    margin-top: 5px;
-                    margin-bottom: 10px;
-                }
+            color: white;
+            text-align: center;
+            background-color: slategray;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
         h2 {
-        background-color: lightgray;
-        padding: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+            background-color: lightgray;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -40,7 +42,7 @@
             text-align: center;
             margin-top: 20px;
             color: white;
-            background-color: orange;
+            background-color: coral;
         }
 
         p {
@@ -82,20 +84,21 @@
         different factors. Some other examples of how CSS Media Queries can be used include:
     <h3>Orientation</h3>
     <p>Like it sounds, CSS Media Queries can be used to adjust a website based on the orientation of the device or
-        browser it is being viewed on. This is especially useful for sites being viewed on a device like a cell phone. Example: </p>
-        <textarea cols="70" rows="5">
+        browser it is being viewed on. This is especially useful for sites being viewed on a device like a cell phone.
+        Example: </p>
+    <textarea cols="70" rows="5">
         @media (orientation: landscape) {
             body {
                 font-size: 20px;
             }
         }
         </textarea>
-        <p> In this example the font would change to 20px if the site was viewed in landscape orientation. </p>
-        <p></p>Other possible orientation values:</p>
-            <ul>
-                <li>portrait</li>
-                <li>landscape</li>
-             </ul>
+    <p>In this example the font would change to 20px if the site was viewed in landscape orientation. </p>
+    <p strong>Other possible orientation values:</p>
+    <ul>
+        <li>portrait</li>
+        <li>landscape</li>
+    </ul>
     <h3>Interaction</h3>
     <h3>Resolution</h3>
     <h3>User Preferences</h3>
