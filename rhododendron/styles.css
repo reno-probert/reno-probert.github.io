@@ -1,0 +1,13 @@
+.image-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-column {
+  background: #044647;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
