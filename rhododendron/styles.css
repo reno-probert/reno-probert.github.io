@@ -4,14 +4,14 @@
   justify-content: center;
 }
 
-.text-column {
+.title-column {
   background: #044647;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.two-columns {
+.header-columns {
   display: flex;
   min-height: 300px;
 }
