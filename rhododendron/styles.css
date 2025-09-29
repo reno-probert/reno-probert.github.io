@@ -11,3 +11,12 @@
   flex-direction: column;
   justify-content: center;
 }
+.two-columns {
+  display: flex;
+  min-height: 300px;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
