@@ -37,6 +37,10 @@
             margin-bottom: 10px;
         }
 
+        h3 {
+            text-decoration: underline;
+        }
+
         footer {
             font-size: large;
             text-align: center;
@@ -67,8 +71,7 @@
     <h2>What does a CSS Media Querie Look like?</h2>
     <p>CSS Media Queries are coded into the CSS file of a website and can be used to adapt almost any CSS design element
         you could want from font-size to background color the site based on how the site is
-        being viewed or interacted with or what it is being viewed on. To create a CSS Media Querie that would alter a
-        site based on the width of the device being used, you would enter something like the following:
+        being viewed or interacted with or what it is being viewed on. Example:
     </p>
     <textarea cols="70" rows="5">
             @media (max-width: 500px) {
@@ -100,11 +103,64 @@
         <li>landscape</li>
     </ul>
     <h3>Interaction</h3>
-    <h3>Resolution</h3>
-    <h3>User Preferences</h3>
-
+    <p>CSS Media Queries can also be used to change a website based on how the user is interacting with it. This can
+        make the website easier to navigate as well as add a level of interactivity and design to the site. Example:
     </p>
-    <footer> Semantic HTML: Better Accessibility, Better Searchability, Better Navigation</footer>
+    <textarea cols="70" rows="5">
+                @media (hover: hover) {
+                     p:hover {
+                        color: green;
+                    }
+            }
+                </textarea>
+    <p>In this example, the color of a paragraph would change to green when the user hovers over it with their mouse.
+    </p>
+    <p><strong>Other possible interaction values:</strong></p>
+    <ul>
+        <li>none</li>
+        <li>pointer</li>
+        <ul>
+            <li>coarse</li>
+            <li>fine</li>
+        </ul>
+    </ul>
+    <h3>Resolution/Device Size</h3>
+    <p>CSS Media Queries can also be used to change a website based on the resolution or the width and height of the device or browser it is
+        being viewed on. Example:   
+    </p>
+    <textarea cols="70" rows="5">
+        @media (min-resolution: 300dpi) {
+            body {
+                font-size: 25px;
+            }
+        }
+        </textarea>
+    <p>In this example, the font size would change to 25px if the device or browser being used to view the site has a resolution of 300dpi or higher. </p>
+    <p><strong>Other possible resolution values:</strong></p>
+    <ul>
+        <li>max-resolution</li>
+        <li>min-width / max-width</li>
+        <li>min-height / max-height</li>
+    </ul>
+    <h3>User Preferences</h3>
+    <p>CSS Media Queries can also be used to change a website based on user preferences selected on the browser or device. This can be useful to keep design elements looking good no matter what display is being used as well as assisting with accessibility. Example:
+    </p>
+    <textarea cols="70" rows="5">
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+                color: white;
+            }
+        }
+        </textarea>
+    <p>In this example, the background color of the website would change to black and the text color would change to white if the user has selected a dark color scheme. </p>
+    <p><strong>Other possible user preference values:</strong></p>
+    <ul>
+        <li>prefers-reduced-motion</li>
+        <li>prefers-contrast</li>
+        <li>prefers-reduced-transparency</li>
+    </ul>
+    <footer> CSS Media Searches: Adapt to anything.</footer>
 </body>
 
 </html>
