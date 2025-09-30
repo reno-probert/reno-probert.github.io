@@ -20,13 +20,11 @@ header {
   width: 100vw;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: flex-end;
 }
 #title h1, #title h2 {
   position: static;
+  bottom: 0;
+  left: 0;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
