@@ -32,3 +32,18 @@ header {
 h2 {
     font-style: italic; 
   }
+
+  @media screen and (orientation:landscape) {
+    #image    {
+      width: 60vw;
+    }
+    #title {
+      width: 40vw;
+      right: 40vs;
+      text-align: left;
+      color: yellow;
+    }
+    #title h1 {
+      width: 35vw;
+    }
+  }
