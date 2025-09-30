@@ -40,10 +40,11 @@ h2 {
     #title {
       width: 40vw;
       right: 40vs;
-      text-align: left;
-      color: yellow;
+      text-align: right;
+      
     }
     #title h1 {
       width: 35vw;
+      color: yellow;
     }
   }
