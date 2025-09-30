@@ -1,28 +1,5 @@
-.image-column {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.title-column {
-  background: #044647;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.header-columns {
-  display: flex;
-  min-height: 300px;
-}
-
-.column {
-  flex: 1;
-  padding: 20px;
-}
-
 body {
   background-color: #222; }
 
-  h2 {
+h2 {
     font-style: italic; }
