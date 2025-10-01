@@ -54,7 +54,7 @@ header {
 
   #main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
   }
@@ -80,8 +80,10 @@ header {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+@media screen and (orientation:portrait) {
 #main {
   display: flex;
   flex-direction: column;
   padding: 20px;
+}
 }
