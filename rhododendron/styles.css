@@ -50,7 +50,7 @@ header {
   color: black;
   padding: 24px;
   margin: 20px 0;
-  border-radius: 5px;
+  border: 2px solid green;
   border-color: green
 }
 
