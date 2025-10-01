@@ -55,12 +55,13 @@ header {
   #main {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .boxes {
-    width: 30vw;
-    margin: 20px;
+    width: 45vw;
+    margin: 5px;
   }
 }
 
