@@ -25,6 +25,11 @@ header {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#title h1 em {
+  color: yellow;
+  font-size: medium;
+}
+
 #title h1 {
   position: static;
   bottom: 0;
@@ -42,12 +47,9 @@ header {
     width: 40vw;
     right: 40vs;
     text-align: right;
+    position: absolute;
+    padding-right: 10px;
 
-  }
-
-  #title h1 {
-    width: 35vw;
-    color: yellow;
   }
 
   #main {
