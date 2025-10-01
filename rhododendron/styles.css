@@ -9,6 +9,13 @@ header {
   height: 100vh;
 }
 
+footer {
+  background-color: green;
+  color: yellow;
+  text-align: center;
+  font-size: small;
+}
+
 #image {
   width: 100vw;
   height: 100vh;
