@@ -47,8 +47,8 @@ header {
   #title {
     text-align: right;
     padding-right: 10px;
-    text-size-adjust: large;
-    max-width: 40vw;
+    text-size-adjust: larger;
+    width: 40vw;
   }
   #title h1 {
     display: inline-block;
