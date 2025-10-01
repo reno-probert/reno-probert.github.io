@@ -25,9 +25,10 @@ header {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#title h1 em {
+#title h1 .latin {
+  display: block;
   color: yellow;
-  font-size: medium;
+  font-style: italic;
 }
 
 #title h1 {
@@ -44,12 +45,14 @@ header {
   }
 
   #title {
-    width: 40vw;
-    right: 40vs;
     text-align: right;
-    position: absolute;
-    padding-right: 2px;
-
+    padding-right: 10px;
+    text-size-adjust: large;
+    max-width: 40vw;
+  }
+  #title h1 {
+    display: inline-block;
+    margin: 0;
   }
 
   #main {
