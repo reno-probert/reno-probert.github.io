@@ -9,13 +9,6 @@ header {
   height: 100vh;
 }
 
-footer {
-  background-color: green;
-  color: yellow;
-  text-align: center;
-  font-size: small;
-  margin-bottom: 5px;
-}
 
 #image {
   width: 100vw;
