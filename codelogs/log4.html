@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color</title>
+
+    <!-- external and internal CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+    <style>
+        textarea .text1 {
+            border: none;
+            padding: 3px;
+            color: red;
+        }
+        textarea .text2 {
+            border: none;
+            padding: 3px;
+            background-color: yellow;
+        }
+        textarea .text3 {
+            border: solid 2px blue;
+            padding: 3px;
+        }
+
+        ul {
+            color: crimson;
+            font-size: larger;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            background-color: slategray;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            background-color: lightgray;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            text-decoration: underline;
+        }
+
+        footer {
+            font-size: large;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            background-color: coral;
+        }
+
+        p {
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Color</h1>
+    <p>
+        CSS can use multiple different methods to alter the colors used on a website. These colors can range from the
+        color of text to backgrounds and borders.
+    </p>
+    <h2>CSS Color Properties</h2>
+    <ul>
+        <li><strong>color:</strong> The color property is used to set the color of text on a website. This can be used
+            to change the color of almost all website text including titles, links, and body paragraphs. Example:
+            <textarea id="text1" cols="70" rows="5">
+            p {
+                color: red;
+            }
+            </textarea>
+        </li>
+        <li><strong>background-color:</strong> This property is used to set the background color of a pafrt of the
+            website. This can be the background of a text box or even the background of the whole page of the website.
+            Example:
+            <textarea idea="text2" cols="70" rows="5">
+            div {
+                background-color: yellow;
+            }
+            </textarea>
+        </li>
+        <li><strong>border-color:</strong> This property is used to set the color of borders around website shapes and
+            elements. Example:
+            <textarea idea="text3" cols="70" rows="5">
+            img {
+                border: 2px solid blue;
+            }
+            </textarea>
+        </li>
+    </ul>
+    <h2>Possible Color Values</h2>
+    <p> There are multiple ways to define a color that are recognized by CSS and will add the color element to the
+        website.
+        These include:
+    </p>
+    <ul>
+        <li>
+            <h3>Color Names:</h3>
+            <p>CSS recognizes 140 different color names that can simply be written into the code to change the color.
+                Simply typing in the name of a color or even a simple variation of the color like <span style="color:blue;">"blue"</span>,
+                <span style="color: lightblue;">"lightblue"</span>, <span style="color: bluegreen;">"bluegreen"</span>, or <span style="color:navy;">"navy"</span> will be recognized by CSS.</p>
+        </li>
+        <li>Hexadecimal (Hex) Values: Hex values are a six-digit code that represents a color. They start with a "#"
+            followed by three pairs of digits representing the red, green, and blue (RGB) components of the color. For
+            example, "#FF0000" represents red, "#00FF00" represents green, and "#0000FF" represents blue.</li>
+        <li>RGB Values: RGB values use the RGB color model to define colors. They are written as "rgb(red, green,
+            blue)" where red, green, and blue are values between 0 and 255. For example, "rgb(255, 0, 0)" represents
+            red,
+            "rgb(0, 255, 0)" represents green, and "rgb(0, 0, 255)" represents blue.</li>
+        <li>RGBA Values: RGBA values are similar to RGB values but include an alpha channel for transparency. They are
+            written as "rgba(red, green, blue, alpha)" where alpha is a value between 0 (fully transparent) and 1
+            (fully opaque). For example, "rgba(255, 0, 0, 0.5)" represents semi-transparent red.</li>
+        <li>HSL Values: HSL stands for Hue, Saturation, and Lightness. HSL values are written as "hsl(hue,
+            saturation%, lightness%)". Hue is a degree on the color wheel (from 0 to 360), saturation is a percentage
+            (from 0% to 100%), and lightness is also a percentage (from 0% to 100%). For example, "hsl(0, 100%, 50%)"
+            represents red.</li>
+        <footer> CSS Media Searches: Adapt to anything.</footer>
+</body>
+
+</html>
