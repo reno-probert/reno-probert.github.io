@@ -16,9 +16,11 @@
             padding: 3px;
             color: red;
         }
+
         body {
-          background-color: pink;
+            background-color: lightpink;
         }
+
         .text2 {
             border: none;
             padding: 3px;
@@ -34,17 +36,23 @@
             color: white;
             text-align: center;
             text-shadow: 2px 2px 5px black;
-            background: linear-gradient(to right,  indigo, violet, pink);
+            background: linear-gradient(to right, indigo, violet, pink);
             margin-top: 15px;
             margin-bottom: 15px;
         }
 
         h2 {
-            background: linear-gradient(to right,  indigo, violet, pink);;
+            background: linear-gradient(to right, indigo, violet, pink);
+            ;
             color: white;
             padding: 10px;
             margin-top: 10px;
             margin-bottom: 10px;
+        }
+
+        h3 {
+            color: indigo;
+            text-decoration: underline;
         }
 
         ul {
@@ -58,7 +66,8 @@
             text-align: center;
             margin-top: 20px;
             color: white;
-            background: linear-gradient(to right,  indigo, violet, pink);;
+            background: linear-gradient(to right, indigo, violet, pink);
+            ;
         }
 
         p {
@@ -111,7 +120,7 @@
     <ul>
         <li><span style="color:blue;">blue</span> </li>
         <li><span style="color:lightblue;">lightblue</span></li>
-        <li><span style="color: bluegreen;">bluegreen</span></li>
+        <li><span style="color: darkslateblue;">darkslateblue</span></li>
         <li><span style="color:navy;">navy</span></li>
     </ul>
     <h3>Hex Values:</h3>
@@ -122,18 +131,29 @@
         <li><span style="color:#00FF00;">#00ff00</span> </li>
         <li><span style="color:#ff506f;">#ff506f</span></li>
         <li><span style="color:#e1d2b4;">#e1d2b4</span></li>
-        <li><span style="color:#c9c6d8;">#c9c6d8</span></li>
+        <li><span style="color:#8c9c6d;">#8c9c6d</span></li>
     </ul>
     <h3>RGB Values:</h3>
-    <p>RGB values use the RGB color model to define colors. They are written as "rgb(red, green,
-        blue)" where red, green, and blue are values between 0 and 255. For example, "rgb(255, 0, 0)" represents
-        red, "rgb(0, 255, 0)" represents green, and "rgb(0, 0, 255)" represents blue.</p>
+    <p>RGB values use RGB color models to create different colors. They are written as "rgb(red, green,
+        blue)" where red, green, and blue are represented by numbers determining how much red, green, or blue will be in
+        the color mix. For example, "rgb(255, 0, 0)" is
+        red, "rgb(0, 255, 0)" is green, and "rgb(0, 0, 255)" is blue. Other examples include:</p>
+    <ul>
+        <li><span style="color:rgb(255, 0, 200);">rgb(255, 0, 200)</span> </li>
+        <li><span style="color:rgb(100, 150, 210);">rgb(100, 255, 210)</span></li>
+        <li><span style="color:rgb(255, 250, 55);">rgb(0, 250, 255)</span></li>
+    </ul>
     <h3>HSL Values: </h3>
     <p>HSL stands for Hue, Saturation, and Lightness. HSL values are written as "hsl(hue,
-        saturation%, lightness%)". Hue is a degree on the color wheel (from 0 to 360), saturation is a percentage
-        (from 0% to 100%), and lightness is also a percentage (from 0% to 100%). For example, "hsl(0, 100%, 50%)"
-        represents red. </p>
-    <footer> CSS Colors: Taste the Rainbow</footer>
+        saturation%, lightness%)". Hue is a degree of color on the color wheel (from 0 to 360), saturation is a
+        percentage representing the overall strength of the color, and lightness is also a percentage representing the brightness or darkness of the color.
+        Examples include:</p>
+    <ul>
+        <li><span style="color:hsl(300, 75%, 50%);">hsl(300, 100%, 50%)</span> </li>
+        <li><span style="color:hsl(200, 50%, 50%);">hsl(200, 50%, 50%)</span></li>
+        <li><span style="color:hsl(120, 100%, 25%);">hsl(120, 100%, 25%)</span></li>
+    </ul>
+        <footer> CSS Colors: Taste the Rainbow</footer>
 </body>
 
 </html>
