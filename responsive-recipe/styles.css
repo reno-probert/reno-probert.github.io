@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin: 24px;
+}
+
+@media screen and (orientation: landscape) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.h1, .h2 {
+    font-family: 'Arial', sans-serif;
+    color: navy;
+    
+}
+
+.background {
+    background-color: #efd172;
+}
