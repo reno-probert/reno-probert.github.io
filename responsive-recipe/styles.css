@@ -38,25 +38,34 @@ body {
 
   .image {
     grid-column: 2/3;
-    grid-row: 1;
     width: 100%;
     height: auto;
     margin-top: 0;
     align-self: start;
+    grid-row: 1/4;
   }
 
   .directions {
     grid-column: 2 / 3;
   }
 
-  .title,
-  .hearts,
-  .description {
-    grid-row: 1;
+  .title {
     grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .hearts,
+  .stars {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+  .description {
+    grid-column: 1 / 2;
+    grid-row: 3;
   }
 
   .ingredients {
     grid-column: 1 / 2;
+    grid-row: 4;
   }
 }
