@@ -49,13 +49,13 @@ body {
     grid-column: 2 / 3;
   }
 
-  .title
-  {
+  .title,
+  .hearts,
+  .description {
     grid-row: 1;
     grid-column: 1 / 2;
   }
-  .hearts,
-  .description,
+
   .ingredients {
     grid-column: 1 / 2;
   }
