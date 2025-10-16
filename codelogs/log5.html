@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+
+    <!-- external and internal CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+    <style>
+        textarea {
+            border: none;
+            padding: 3px;
+            background-color: rgb(162, 226, 243);
+        }
+
+        ul {
+            font-size: larger;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            background-color: teal;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            background-color: rgb(174, 242, 213);
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+
+        footer {
+            font-size: large;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            background-color: teal;
+        }
+
+        p {
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Images</h1>
+    <h2>&lt;img&gt; vs. background-img</h2>
+    <p>
+        The &lt;img&gt; tag which is used to add images to the HTML of a website. The background-image property is used
+        to add images as a background to an element on a website in CSS. The &lt;img&gt; tag is used to add images that are
+        part of the content of the website, they can have their size altered, descriptions added, and are part of the
+        oveerall flow of the elements on the site. You can add images from files added to your code as well as links to online images.
+    </p>
+            <textarea cols="70" rows="5">
+                 <img src="image.jpg" alt="Description of image" width="500" height="600">
+            </textarea>
+            <textarea cols="70" rows="5">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Sciurus_carolinensis_Squirrel.jpg" alt="A squirrel" width="300">
+            </textarea>
+            <p>The bottom example would result in an image like this:</p>
+             <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Sciurus_carolinensis_Squirrel.jpg" alt="A squirrel" width="300">
+    <p>
+        The background-image property is used to add images that are part of the design of the website, they can't have
+        descriptions added, and rather than going directly as an element into the html, they are a design element added
+        in CSS. These can also have additional CSS modifiers added to them such as:
+        </p>
+        <ul>
+            <li>background-size: determines scaling (ex. cover, contain)</li>
+            <li>background-repeat: deterimnes if the image will repeat, forming a pattern</li>
+            <li>background-position: determines where the image will be placed (ex. center, top-right)</li>
+        </ul>
+        <p>Example:
+         </p>
+            <textarea cols="70" rows="5">
+                background-image: url('image.jpg');
+                background-size: cover;
+            </textarea>
+    <h2>Difference Between Resolution and Dimensions in a Bitmap Image</h2>
+    <p>The central difference between dimensions and resolution is that resolution refers to the amount of pixels
+        per inch in an image as a whole, while dimensions refer to the total number of pixels in the width and height of an
+        image.</p>
+    </p>
+    <h2>Image File Types</h2>
+    <ul>
+        <li>JPEG: Good for both photographs and images especially large sizes. Compression can reducee file size but may result in some loss of quality, especially if uploaded (and therefore compressed) multiple times.</li>
+        <li>PNG: Good for images with transparent backgrounds and/or sharp, clean edges.
+            Good for logos and icons and uses lossless compression, preserving image quality.</li>
+        <li>GIF: Good for simple animations. Uses a limited amount of colors that can make the image look less detailed or of lesser quality.</li>
+        <li>SVG: A vector format that is good for logos, icons, and illustrations that need to scale without losing quality. Not as good for things like photographs which would not be in a vector format.</li>
+        <li>WebP: Google made image format that has better compression rates than JPEG and PNG while maintaining quality. Very good for web use.</li>
+    </ul>
+
+    <footer> A Picture is Worth 1,000 Words</footer>
+</body>
+
+</html>
