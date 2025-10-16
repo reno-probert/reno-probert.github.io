@@ -49,6 +49,13 @@
             text-align: justify;
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        body {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7c/Bergwiese-Kaernten-2008-Thomas_Huntke.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     </style>
 
 </head>
@@ -59,47 +66,66 @@
     <h2>&lt;img&gt; vs. background-img</h2>
     <p>
         The &lt;img&gt; tag which is used to add images to the HTML of a website. The background-image property is used
-        to add images as a background to an element on a website in CSS. The &lt;img&gt; tag is used to add images that are
+        to add images as a background to an element on a website in CSS. The &lt;img&gt; tag is used to add images that
+        are
         part of the content of the website, they can have their size altered, descriptions added, and are part of the
-        oveerall flow of the elements on the site. You can add images from files added to your code as well as links to online images.
+        oveerall flow of the elements on the site. You can add images from files added to your code as well as links to
+        online images.
     </p>
-            <textarea cols="70" rows="5">
-                 <img src="image.jpg" alt="Description of image" width="500" height="600">
-            </textarea>
-            <textarea cols="70" rows="5">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Squirrel_in_Seurasaari_autumn.JPG" alt="A squirrel" width="300">
-            </textarea>
-            <p>The example on the right would result in an image like this:</p>
-             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Squirrel_in_Seurasaari_autumn.JPG" alt="A squirrel" width="300">
+    <textarea cols="70" rows="5">
+    <img src="image.jpg" alt="Description of image" width="500" height="600">
+    </textarea>
+    <textarea cols="70" rows="5">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Squirrel_in_Seurasaari_autumn.JPG" alt="A squirrel" width="300">
+    </textarea>
+    <p>The example on the right would result in an image like this:</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Squirrel_in_Seurasaari_autumn.JPG" alt="A squirrel"
+        width="300">
     <p>
         The background-image property is used to add images that are part of the design of the website, they can't have
         descriptions added, and rather than going directly as an element into the html, they are a design element added
         in CSS. These can also have additional CSS modifiers added to them such as:
-        </p>
-        <ul>
-            <li>background-size: determines scaling (ex. cover, contain)</li>
-            <li>background-repeat: deterimnes if the image will repeat, forming a pattern</li>
-            <li>background-position: determines where the image will be placed (ex. center, top-right)</li>
-        </ul>
-        <p>Example:
-         </p>
-            <textarea cols="70" rows="5">
-                background-image: url('image.jpg');
-                background-size: cover;
-            </textarea>
+    </p>
+    <ul>
+        <li>background-size: determines scaling (ex. cover, contain)</li>
+        <li>background-repeat: deterimnes if the image will repeat, forming a pattern</li>
+        <li>background-position: determines where the image will be placed (ex. center, top-right)</li>
+    </ul>
+    <p>Example:
+    </p>
+    <textarea cols="70" rows="5">
+    body {
+    background-image: url('image.jpg');
+    background-size: cover;
+    }
+    </textarea>
+    <textarea cols="70" rows="5">
+    body {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7c/Bergwiese-Kaernten-2008-Thomas_Huntke.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    </textarea>
+    <p>The example on the right would result in a background like the one you see on the page:</p>
     <h2>Difference Between Resolution and Dimensions in a Bitmap Image</h2>
     <p>The central difference between dimensions and resolution is that resolution refers to the amount of pixels
-        per inch in an image as a whole, while dimensions refer to the total number of pixels in the width and height of an
+        per inch in an image as a whole, while dimensions refer to the total number of pixels in the width and height of
+        an
         image.</p>
     </p>
     <h2>Image File Types</h2>
     <ul>
-        <li>JPEG: Good for both photographs and images especially large sizes. Compression can reducee file size but may result in some loss of quality, especially if uploaded (and therefore compressed) multiple times.</li>
+        <li>JPEG: Good for both photographs and images especially large sizes. Compression can reducee file size but may
+            result in some loss of quality, especially if uploaded (and therefore compressed) multiple times.</li>
         <li>PNG: Good for images with transparent backgrounds and/or sharp, clean edges.
             Good for logos and icons and uses lossless compression, preserving image quality.</li>
-        <li>GIF: Good for simple animations. Uses a limited amount of colors that can make the image look less detailed or of lesser quality.</li>
-        <li>SVG: A vector format that is good for logos, icons, and illustrations that need to scale without losing quality. Not as good for things like photographs which would not be in a vector format.</li>
-        <li>WebP: Google made image format that has better compression rates than JPEG and PNG while maintaining quality. Very good for web use.</li>
+        <li>GIF: Good for simple animations. Uses a limited amount of colors that can make the image look less detailed
+            or of lesser quality.</li>
+        <li>SVG: A vector format that is good for logos, icons, and illustrations that need to scale without losing
+            quality. Not as good for things like photographs which would not be in a vector format.</li>
+        <li>WebP: Google made image format that has better compression rates than JPEG and PNG while maintaining
+            quality. Very good for web use.</li>
     </ul>
 
     <footer> A Picture is Worth 1,000 Words</footer>
