@@ -25,3 +25,21 @@ body {
   color: gold;
   font-size: 2rem;
 }
+
+@media screen and (orientation: portrait) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    width: 100%;         /* Makes the image span the width */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
