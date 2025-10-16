@@ -18,7 +18,7 @@ h1, h2 {
 }
 
 body {
-    background-color: lightpink;
+    background: linear-gradient(lightpink, white, lightblue);
 }
 
 .stars {
@@ -36,11 +36,4 @@ body {
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
-  }
-  .image img {
-    width: 100%;
-    height: auto;
-    display: block;
-        object-fit: cover;
-  }
 }
