@@ -32,7 +32,7 @@ body {
     flex-direction: column;
   }
   .image {
-    width: 100%;         /* Makes the image span the width */
+    width: 100%;         
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -41,5 +41,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
+        object-fit: cover;
   }
 }
