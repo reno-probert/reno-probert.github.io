@@ -16,11 +16,10 @@ body {
 }
 
   .image {
-    width: 100%;         
+    width: 100vw;         
     margin-bottom: 10px;
     height: auto;
     display: block;
-    justify-content: center;
   }
 
   .description {
