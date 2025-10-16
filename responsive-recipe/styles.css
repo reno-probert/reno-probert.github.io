@@ -11,12 +11,12 @@
   }
 }
 
-.h1, .h2 {
+h1, h2 {
     font-family: 'Arial', sans-serif;
     color: navy;
     
 }
 
-.background {
+body {
     background-color: #efd172;
 }
