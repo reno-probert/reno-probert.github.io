@@ -10,15 +10,16 @@ body {
     background: linear-gradient(lightpink, white, lightblue);
 }
 
-.stars {
-  color: gold;
+.hearts {
+    color: red;
   font-size: 2rem;
 }
 
   .image {
     width: 100%;         
     margin-bottom: 10px;
-    display: flex;
+    height: auto;
+    display: block;
     justify-content: center;
   }
 
