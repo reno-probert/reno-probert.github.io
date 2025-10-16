@@ -19,6 +19,7 @@ body {
   margin-bottom: 10px;
   height: auto;
   display: block;
+  margin-left: 0;
 }
 
 .description {
@@ -32,12 +33,15 @@ body {
     grid-template-columns: 1fr 2fr;
     gap: 20px;
     align-items: start;
+    grid-template-rows: auto;
   }
 
   .image {
     grid-column: 2/3;
     width: 100%;
     height: auto;
+    margin-top: 0;
+    align-self: start;
   }
 
   .directions {
