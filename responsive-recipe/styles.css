@@ -20,6 +20,7 @@ body {
     margin-bottom: 10px;
     height: auto;
     display: block;
+    justify-content: left;
   }
 
   .description {
