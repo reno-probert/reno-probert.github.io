@@ -1,3 +1,43 @@
+/* CSS for nav-menu */
+
+:root {
+  --nav-height: 3 rem;
+  --nav-bg-color: lightblue;
+  --nav-text-color: darkblue;
+  --nav-hover-bg-color: deepskyblue;
+  --nav-hover-text-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: var(--nav-height);
+  width: 100%;
+  background-color: var(--nav-bg-color);
+}
+
+#navBurger {
+  position: relative;
+  display: block;
+  font-size: 2rem;
+  color: var(--nav-text-color);
+  padding: 0.1em 0 0 0.3em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: var(--nav-bg-color);
+}
+
+/* CSS for pages */
 h1,
 h2 {
   font-family: 'Courier New', Courier, monospace;
