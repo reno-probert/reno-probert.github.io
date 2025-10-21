@@ -1,0 +1,71 @@
+h1,
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(30, 1, 25);
+
+}
+
+body {
+  background: linear-gradient(lightpink, white, lightblue);
+}
+
+.hearts {
+  color: red;
+  font-size: 2rem;
+}
+
+.image {
+  width: 100vw;
+  margin-bottom: 10px;
+  height: auto;
+  display: block;
+  margin-left: 0;
+}
+
+.description {
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media (orientation: landscape) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+    grid-template-rows: auto;
+  }
+
+  .image {
+    grid-column: 2/3;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    align-self: start;
+    grid-row: 1/4;
+  }
+
+  .directions {
+    grid-column: 2 / 3;
+  }
+
+  .title {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .hearts,
+  .stars {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+  .description {
+    grid-column: 1 / 2;
+    grid-row: 3;
+  }
+
+  .ingredients {
+    grid-column: 1 / 2;
+    grid-row: 4;
+  }
+}
