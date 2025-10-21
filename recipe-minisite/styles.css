@@ -5,7 +5,7 @@
 /* define variables */
 :root {
     --nav-height: 3rem;
-    --nav-bkgd-color: lightblue;
+    --nav-bkgd-color: pink;
     --nav-text-color: navy ;
     --nav-hover-bkgd-color: rgb(15, 164, 223);
     --nav-hover-text-color: white;
