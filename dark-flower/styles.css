@@ -94,6 +94,10 @@ header {
 
 #toggleDarkMode {
     margin-top: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    background: darkgreen;
+    color: white;
 }
 
 body.darkMode {
@@ -110,18 +114,11 @@ body.darkMode .boxes {
 }
 
 body.darkMode .boxes h2 {
-  color: yellow;
+  color: white;
   letter-spacing: 0.04em;
 }
 
 
 body.darkMode #title h1 .latinname {
     color: lime;
-}
-
-.btn {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 20px;
-    background: darkgreen;
-    color: white;
 }
