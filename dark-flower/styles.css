@@ -97,8 +97,17 @@ header {
 }
 
 body.darkMode {
-    background-color: darkgrey;
+    background-color: black;
     color: white;
+}
+
+.boxes.darkMode {
+  background: #222;
+  color: white;
+  padding: 24px;
+  margin: 20px 0;
+  border: 2px solid green;
+  border-color: green
 }
 
 body.darkMode h1 {
