@@ -101,15 +101,19 @@ body.darkMode {
     color: white;
 }
 
-.boxes.darkMode {
+body.darkMode .boxes {
   background: #222;
   color: white;
   padding: 24px;
   margin: 20px 0;
   border: 2px solid green;
-  border-color: green
 }
 
-body.darkMode h1 {
-    color: red;
+body.darkMode .boxes h2 {
+  color: yellow;
+}
+
+
+body.darkMode #title h1 .latinname {
+    color: lime;
 }
