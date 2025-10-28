@@ -110,7 +110,8 @@ body.darkMode .boxes {
 }
 
 body.darkMode .boxes h2 {
-  color: yellow;
+  color: white;
+  letter-spacing: 0.04em;
 }
 
 
