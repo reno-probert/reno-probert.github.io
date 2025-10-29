@@ -24,10 +24,6 @@ header {
   width: 100vw;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-right: 5px;
 }
 
 #title h1 .latinname {
@@ -93,18 +89,17 @@ header {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  align-items: flex-end;
 }
 }
 
 #toggleDarkMode {
     margin-bottom: 2em;
+    margin-top: 1em;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 20px;
     background: darkgreen;
     color: white;
     border-radius: 6px;
-    position: static;
 }
 
 body.darkMode {
