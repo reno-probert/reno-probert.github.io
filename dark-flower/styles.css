@@ -24,6 +24,10 @@ header {
   width: 100vw;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 5px;
 }
 
 #title h1 .latinname {
@@ -89,6 +93,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  align-items: flex-end;
 }
 }
 
@@ -99,7 +104,7 @@ header {
     background: darkgreen;
     color: white;
     border-radius: 6px;
-    position: absolute;
+    position: static;
 }
 
 body.darkMode {
