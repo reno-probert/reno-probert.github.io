@@ -98,6 +98,8 @@ header {
     padding: 10px 20px;
     background: darkgreen;
     color: white;
+    border-radius: 6px;
+
 }
 
 body.darkMode {
