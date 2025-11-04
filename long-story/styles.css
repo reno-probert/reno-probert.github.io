@@ -4,8 +4,6 @@ body {
   margin: 0;
   color: #111;
   text-align: left;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 h1 {
@@ -48,25 +46,8 @@ p {
   margin: 0 auto;      
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
 
 body {
   scroll-snap-type: y mandatory; /* enable scroll snapping on the body */
   overflow-y: auto;
-}
-
-
-section {
-  min-height: 100vh;        /* full viewport height */
-  height: 100vh;            /* ensures exact full height */
-  box-sizing: border-box;
-  display: flex;            /* useful to center content inside the section */
-  flex-direction: column;
-  justify-content: left;  /* vertical centering */
-  align-items: left;      /* horizontal centering */
-  padding: 2rem; 
-  scroll-snap-align: start;            /* internal spacing */
 }
