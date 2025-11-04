@@ -4,6 +4,9 @@ body {
   margin: 0;
   color: #111;
   text-align: left;
+  position:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
