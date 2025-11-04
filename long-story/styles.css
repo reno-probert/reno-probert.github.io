@@ -3,10 +3,11 @@ body {
   min-height: 100vh;
   margin: 0;
   color: #111;
+  text-align: left;
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   font-family: 'Georgia', serif;
   margin-top: 50px;
 }
