@@ -11,14 +11,16 @@ h1 {
   font-family: 'Georgia', serif;
   margin-top: 50px;
 }
-h2 {
-  text-align: left;
-  font-family: 'Georgia', serif;
-  margin-bottom: 40px;
-}
 h3 {
   text-align: left;
   font-family: 'Georgia', serif;
+  margin-bottom: 40px;
+  color: white;
+  text-shadow: #010e24 1px 1px 2px;
+}
+h2 {
+  text-align: left;
+  font-family: 'Inter', sans-serif;
   margin-bottom: 10px;
   text-size-adjust: larger;
   margin-left: 10px;
