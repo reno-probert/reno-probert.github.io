@@ -20,6 +20,10 @@ h3 {
   text-align: left;
   font-family: 'Georgia', serif;
   margin-bottom: 10px;
+  text-size-adjust: larger;
+  margin-left: 10px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 p {
   max-width: 800px;
