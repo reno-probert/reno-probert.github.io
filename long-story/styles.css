@@ -31,7 +31,7 @@ p {
   line-height: 1.6;
   font-family: 'Inter', sans-serif;
   font-size: 18px;
-  background-color: rgba(173, 216, 230, 0.6);
+  background-color: rgba(173, 216, 230, 0.4);
   padding: 5px;
   
 }
@@ -44,4 +44,27 @@ p {
   height: auto;
   object-fit: cover;  
   margin: 0 auto;      
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  scroll-snap-type: y mandatory; /* enable scroll snapping on the body */
+  overflow-y: auto;
+}
+
+
+section {
+  min-height: 100vh;        /* full viewport height */
+  height: 100vh;            /* ensures exact full height */
+  box-sizing: border-box;
+  display: flex;            /* useful to center content inside the section */
+  flex-direction: column;
+  justify-content: left;  /* vertical centering */
+  align-items: left;      /* horizontal centering */
+  padding: 2rem; 
+  scroll-snap-align: start;            /* internal spacing */
 }
