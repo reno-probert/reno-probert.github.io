@@ -53,9 +53,14 @@ body {
   overflow-y: auto;
 }
 
+.title {
+  text-align: left;
+  margin-left: 10px;
+  height:100vh;
+  scroll-snap-align: start; /* snap to the start of the title section */
+}
 .boxes {
   height: 100vh; /* each section takes full viewport height */
   scroll-snap-align: start; /* snap to the start of each section */
   justify-content: left;
-  border-top: 3px dotted white;
 }
