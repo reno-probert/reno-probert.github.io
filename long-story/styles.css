@@ -12,6 +12,7 @@ h1 {
   margin-top: 50px;
   font-size: 5rem;
 }
+
 h3 {
   text-align: left;
   font-family: 'Georgia', serif;
@@ -58,7 +59,15 @@ body {
   margin-left: 10px;
   height:100vh;
   scroll-snap-align: start; /* snap to the start of the title section */
+  width: 50vw;
 }
+
+@media (orientation: portrait) {
+.title {
+  width: 100%;
+}
+}
+
 .boxes {
   height: 100vh; /* each section takes full viewport height */
   scroll-snap-align: start; /* snap to the start of each section */
