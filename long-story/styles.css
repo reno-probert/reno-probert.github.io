@@ -57,5 +57,5 @@ body {
   height: 100vh; /* each section takes full viewport height */
   scroll-snap-align: start; /* snap to the start of each section */
   justify-content: left;
-  border-bottom: 2px dotted white;
+  border-top: 3px dotted white;
 }
