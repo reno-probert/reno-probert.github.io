@@ -20,7 +20,7 @@ h2 {
   text-align: left;
   font-family: 'Inter', sans-serif;
   margin-bottom: 10px;
-  text-size-adjust: larger;
+  font-size: larger;
   margin-left: 10px;
   color: white;
   text-shadow: 2px 2px 4px #000000;
@@ -50,4 +50,14 @@ p {
 body {
   scroll-snap-type: y mandatory; /* enable scroll snapping on the body */
   overflow-y: auto;
+}
+
+.section2, .section3, .section4, .section5, .section6 {
+  height: 100vh; /* each section takes full viewport height */
+  scroll-snap-align: start; /* snap to the start of each section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
