@@ -77,3 +77,10 @@ body {
   scroll-snap-align: start;
   justify-content: left;
 }
+
+.footer {
+  text-align: left;
+  font-size: 12px;
+  color: rgb(85, 216, 248);
+  background-color: none;
+}
