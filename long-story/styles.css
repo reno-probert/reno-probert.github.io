@@ -50,7 +50,7 @@ p {
 
 
 body {
-  scroll-snap-type: y mandatory; /* enable scroll snapping on the body */
+  scroll-snap-type: y mandatory;
   overflow-y: auto;
 }
 
@@ -58,7 +58,7 @@ body {
   text-align: left;
   margin-left: 10px;
   height:100vh;
-  scroll-snap-align: start; /* snap to the start of the title section */
+  scroll-snap-align: start;
   width: 50vw;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 .boxes {
-  height: 100vh; /* each section takes full viewport height */
-  scroll-snap-align: start; /* snap to the start of each section */
+  height: 100vh;
+  scroll-snap-align: start;
   justify-content: left;
 }
