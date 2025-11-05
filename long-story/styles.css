@@ -53,7 +53,7 @@ body {
   overflow-y: auto;
 }
 
-.section2, .section3, .section4, .section5, .section6 {
+.boxes {
   height: 100vh; /* each section takes full viewport height */
   scroll-snap-align: start; /* snap to the start of each section */
   display: flex;
