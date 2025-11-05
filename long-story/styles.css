@@ -73,3 +73,7 @@ body {
   scroll-snap-align: start; /* snap to the start of each section */
   justify-content: left;
 }
+
+.images {
+  animation: fadeinUP 2s;
+}
