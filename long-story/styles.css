@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #a9e5f9, #6fcef4, #419af4, #0f61ef, #07327d, #010e24, black);
+  background: linear-gradient(to bottom, white, #a9e5f9, #6fcef4, #419af4, #0f61ef, #07327d, #010e24, black);
   min-height: 100vh;
   margin: 0;
   color: #111;
@@ -57,6 +57,5 @@ body {
   height: 100vh; /* each section takes full viewport height */
   scroll-snap-align: start; /* snap to the start of each section */
   justify-content: left;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-bottom: 2px dotted white;
 }
