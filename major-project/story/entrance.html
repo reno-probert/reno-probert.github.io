@@ -14,10 +14,11 @@
       }
 
       // Optional: show class-exclusive options
-      function setupChoices() {
-        const playerClass = getClass();
+      
+function setupChoices() {
+  const playerClass = getClass();
 
-          const barbarianBtn = document.getElementById("barbarian-only");
+  const barbarianBtn = document.getElementById("barbarian-only");
   if (barbarianBtn && playerClass !== "barbarian") {
     barbarianBtn.style.display = "none";
   }
