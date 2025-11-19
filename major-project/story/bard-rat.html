@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bard-Rat</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="storyscripts.js"></script>
+</head>
+
+<body>
+    <div id="screen">
+
+        <h1>End of the Hall</h1>
+
+        <div id="story">
+            The rat looks at you quizically as you sing your beautiful melody, for a moment it looks like the rat is
+            responding to the music but it isn't.... because it's a rat. It scurries off down the direction you came.
+            Now which passage are you taking?
+        </div>
+
+        <div id="choices">
+
+            <!-- Normal choice available to all classes -->
+            <button onclick="location.href='right-passage.html?class=' + getClass()">Take the right passage</button>
+            <button onclick="location.href='left-passage.html?class=' + getClass()">Take the left passage</button>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
