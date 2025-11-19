@@ -48,7 +48,7 @@ button {
 
 button:hover {
   background: #033003;
-  transform: translateY(-2px); /* Chunky hover pop */
+  transform: translateY(-2px);
   box-shadow: 0 0 10px #0f0;
 }
 
@@ -57,6 +57,10 @@ button:active {
   background: #022202;
 }
 
+#class-selection {
+ text-align:center; 
+ margin-top:20px;
+}
 /* ===== TEXT WINDOWS ===== */
 
 #story {
@@ -74,7 +78,7 @@ button:active {
   gap: 8px;
 }
 
-/* ===== PIXEL ANIMATIONS ===== */
+/* animations */
 
 @keyframes flicker {
   0%, 100% { opacity: 1; }
