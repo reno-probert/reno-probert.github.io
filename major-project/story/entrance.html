@@ -5,28 +5,40 @@
     <title>Dungeon Entrance</title>
     <link rel="stylesheet" href="../styles.css">
     <script>
-     function getClass() {
+      // Class helper so pages know the player's class
+      function getClass() {
         const params = new URLSearchParams(window.location.search);
         let cls = params.get("class");
         if (!cls) cls = localStorage.getItem("playerClass");
         return cls;
       }
 
-      // Utility function: hide element if it exists and class doesn't match
-      function hideIfNot(id, allowedClass) {
-        const el = document.getElementById(id);
-        if (el && getClass() !== allowedClass) {
-          el.style.display = "none";
-        }
-      }
-
-      // Class-specific option setup
+      // Optional: show class-exclusive options
       function setupChoices() {
-        hideIfNot("druid-only", "druid");
-        hideIfNot("barbarian-only", "barbarian");
-        hideIfNot("bard-only", "bard");
-        hideIfNot("rogue-only", "rogue");
-      }
+        const playerClass = getClass();
+
+          const barbarianBtn = document.getElementById("barbarian-only");
+  if (barbarianBtn && playerClass !== "barbarian") {
+    barbarianBtn.style.display = "none";
+  }
+
+  const rogueBtn = document.getElementById("rogue-only");
+  if (rogueBtn && playerClass !== "rogue") {
+    rogueBtn.style.display = "none";
+  }
+
+  const bardBtn = document.getElementById("bard-only");
+  if (bardBtn && playerClass !== "bard") {
+    bardBtn.style.display = "none";
+  }
+
+  const druidBtn = document.getElementById("druid-only");
+  if (druidBtn && playerClass !== "druid") {
+    druidBtn.style.display = "none";
+  }
+}
+
+      window.onload = setupChoices;
     </script>
 </head>
 
