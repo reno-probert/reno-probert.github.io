@@ -61,7 +61,24 @@ button:active {
  text-align:center; 
  margin-top:20px;
 }
-/* ===== TEXT WINDOWS ===== */
+
+#barbarian-only {
+  color: red;
+}
+
+#bard-only {
+  color: palevioletred;
+}
+
+#rogue-only {
+  color: navy;
+}
+
+#druid-only {
+  color: green;
+}
+
+/* Pages */
 
 #story {
   padding: 15px;
