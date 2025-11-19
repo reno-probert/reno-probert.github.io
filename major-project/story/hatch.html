@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hatch</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="storyscripts.js"></script>
+</head>
+
+<body>
+  <div id="screen">
+
+    <h1>Secret Passage</h1>
+
+    <div id="story">
+      As you walk past the chest you hear what sounds like a low rumbling sound. Looking down you pull back the rug revealing what appears to be a hatch set in the floor, the small metal rectangle appears to be a handle. Lifting the handle you see a ladder leading to a lower level.
+    </div>
+
+    <div id="choices">
+
+      <!-- Normal choice available to all classes -->
+      <button onclick="location.href='mimic.html?class=' + getClass()">Open the chest</button>
+      <button onclick="location.href='level-2.html?class=' + getClass()">Climb down the ladder</button>
+
+    </div>
+
+  </div>
+</body>
+</html>

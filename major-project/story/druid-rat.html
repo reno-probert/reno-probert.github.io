@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Druid-Rat</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="storyscripts.js"></script>
+</head>
+
+<body>
+    <div id="screen">
+
+        <h1>Conversing with Rodents</h1>
+
+        <div id="story">
+            Using the language of the druids you speak to the rat, asking which passage to take. The rat chatters and squeaks about annoying tourists before exhasperatedly pointing to the left passage.
+        </div>
+
+        <div id="choices">
+
+            <!-- Normal choice available to all classes -->
+            <button onclick="location.href='right-passage.html?class=' + getClass()">Listen to the rat and take the left passage</button>
+            <button onclick="location.href='left-passage.html?class=' + getClass()">Ignore the rat and take the right passage</button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
