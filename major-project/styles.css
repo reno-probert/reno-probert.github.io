@@ -25,11 +25,11 @@ button img {
   border-radius: 0;
 }
 
-h1, h2, h3 {
+h1 {
   text-align: center;
   letter-spacing: 2px;
   text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
-  font-size: 20px; /* Pixel-friendly size */
+  font-size: 70px;
 }
 
 button {
