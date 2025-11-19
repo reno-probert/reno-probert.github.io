@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Level-2</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="../storyscripts.js"></script>
+</head>
+
+<body>
+    <div id="screen">
+
+        <h1>Second Level</h1>
+
+        <div id="story">
+            As you enter the doors of the dungeon you come to a long corridor lit by a few, flickering torches. The
+            hallway turns sharply to the right but on the left you see a locked door covered in strange runes, what do
+            you do?
+        </div>
+
+        <div id="choices">
+
+            <!-- Normal choice -->
+            <button onclick="location.href='hallway.html?class=' + getClass()">Continue down the hallway, leaving the
+                door behind</button>
+            <button onclick="location.href='entrance-fail.html?class=' + getClass()">Flee in terror</button>
+
+            <!-- Class choice -->
+            <button id="barbarian-only" onclick="location.href='inside-room.html?class=' + getClass()">Smash the door
+                (Barbarian)</button>
+
+            <button id="rogue-only" onclick="location.href='inside-room.html?class=' + getClass()">Pick the lock
+                (Rogue)</button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

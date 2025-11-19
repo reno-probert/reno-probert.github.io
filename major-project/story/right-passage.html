@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Right Passage</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="storyscripts.js"></script>
+</head>
+
+<body>
+    <div id="screen">
+
+        <h1>Right Passage</h1>
+
+        <div id="story">
+            The right passage leads you down a set of spiral stairs. It seems just like an ordinary set of stairs, nothing weird. Maybe that's why it was called the "right" passage? You could make it more interesting if you want, or just walk down, whatever floats your boat.
+        </div>
+
+        <div id="choices">
+
+            <!-- Normal choice -->
+            <button onclick="location.href='floor-2/level-2.html?class=' + getClass()">Walk to the bottom of the stairs like a normal, well adjusted person</button>
+
+            <!-- Class choice -->
+            <button id="rogue-only" onclick="location.href='rogue-right.html?class=' + getClass()">Do a backflip</button>
+            <button id="bard-only" onclick="location.href='bard-right.html?class=' + getClass()">Skip gracefully down the steps</button>
+            <button id="barbarian-only" onclick="location.href='barbarian-right.html?class=' + getClass()">Smash the stairs!</button>
+            <button id="druid-only" onclick="location.href='druid-right.html?class=' + getClass()">Cast a spell to light your way</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
