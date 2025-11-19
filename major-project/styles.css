@@ -40,7 +40,7 @@ button {
   margin: 6px;
   cursor: pointer;
   font-family: "Press Start 2P", monospace;
-  font-size: 12px;
+  font-size: 16px;
   text-transform: uppercase;
   image-rendering: pixelated;
   text-shadow: 0 0 5px #0f0;
@@ -64,18 +64,26 @@ button:active {
 
 #barbarian-only {
   color: red;
+    text-shadow: 0 0 3px red;
+  image-rendering: pixelated;
 }
 
 #bard-only {
   color: palevioletred;
+    text-shadow: 0 0 3px palevioletred;
+  image-rendering: pixelated;
 }
 
 #rogue-only {
   color: navy;
+    text-shadow: 0 0 3px navy;
+  image-rendering: pixelated;
 }
 
 #druid-only {
   color: green;
+    text-shadow: 0 0 3px green;
+  image-rendering: pixelated;
 }
 
 /* Pages */
