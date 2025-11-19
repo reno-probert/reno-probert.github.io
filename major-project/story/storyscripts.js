@@ -1,4 +1,4 @@
-   // Class helper so pages know the player's class
+      // Class helper so pages know the player's class
       function getClass() {
         const params = new URLSearchParams(window.location.search);
         let cls = params.get("class");
@@ -7,10 +7,11 @@
       }
 
       // Optional: show class-exclusive options
-      function setupChoices() {
-        const playerClass = getClass();
+      
+function setupChoices() {
+  const playerClass = getClass();
 
-          const barbarianBtn = document.getElementById("barbarian-only");
+  const barbarianBtn = document.getElementById("barbarian-only");
   if (barbarianBtn && playerClass !== "barbarian") {
     barbarianBtn.style.display = "none";
   }
@@ -26,10 +27,9 @@
   }
 
   const druidBtn = document.getElementById("druid-only");
-    const druidBtn = document.getElementById("druid-only");
-    if (druidBtn && playerClass !== "druid") {
-      druidBtn.style.display = "none";
-    }
+  if (druidBtn && playerClass !== "druid") {
+    druidBtn.style.display = "none";
   }
-  
-  window.onload = setupChoices;
+}
+
+      window.onload = setupChoices;
