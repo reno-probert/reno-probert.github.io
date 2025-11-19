@@ -1,94 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dungeon Entrance</title>
+    <title>Dungeon Room</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script>
+      // Class helper so pages know the player's class
+      function getClass() {
+        const params = new URLSearchParams(window.location.search);
+        let cls = params.get("class");
+        if (!cls) cls = localStorage.getItem("playerClass");
+        return cls;
+      }
 
-    <style>
-        body {
-            background: #0d0d0d;
-            color: #f2f2f2;
-            font-family: "Georgia", serif;
-            text-align: center;
-            padding: 40px;
+      // Optional: show class-exclusive options
+      function setupChoices() {
+        const playerClass = getClass();
+
+        // Example: only Druids can talk to animals
+        if (playerClass !== "druid") {
+          document.getElementById("druid-only").style.display = "none";
         }
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            text-shadow: 0 0 8px #000;
+        // Example: only Barbarians can smash walls
+        if (playerClass !== "barbarian") {
+          document.getElementById("barbarian-only").style.display = "none";
         }
 
-        .image-container {
-            margin: 20px auto;
-            width: 80%;
-            max-width: 600px;
+        // Example: only Bards can charm enemies
+        if (playerClass !== "bard") {
+          document.getElementById("bard-only").style.display = "none";
         }
+      }
 
-        .image-container img {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 0 10px #000;
-        }
-
-        .description {
-            margin-top: 20px;
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .class-indicator {
-            margin-top: 25px;
-            font-size: 1.1rem;
-            opacity: 0.8;
-        }
-    </style>
+      window.onload = setupChoices;
+    </script>
 </head>
 
 <body>
+  <div id="screen">
 
     <h1>Dungeon Entrance</h1>
 
-    <!-- ✅ PLACE YOUR IMAGE HERE -->
-    <div class="image-container">
-        <img src="" alt="Entrance Image (Add your file path)" id="entrance-image">
+    <div id="story">
+      As you enter the doors of the dungeon you come to a long corridor lit by a few, flickering torches. The hallway turns sharply to the right but on the left you see a locked door covered in strange runes, what do you do?
     </div>
 
-    <div class="description">
-        You stand before the massive stone archway of the forgotten dungeon.  
-        The air is cold, silent, and expectant.  
-        Whatever lies beyond these ancient doors… your class will determine how you face it.
+    <div id="choices">
+
+      <!-- Normal choice available to all classes -->
+      <button onclick="location.href='hallway.html?class=' + getClass()">Continue down the hallway, leaving the door behind</button>
+      <button onclick="location.href='hallway.html?class=' + getClass()">Flee in terror.</button>
+
+      <!-- Class-exclusive buttons -->
+      <button id="barbarian-only" onclick="location.href='inside-room.html?class=' + getClass()">Smash the door.</button>
+
+      <button id="rogue-only" onclick="location.href='inside-room.html?class=' + getClass()">Communicate with the dungeon rat</button>
+
     </div>
 
-    <div class="class-indicator" id="classDisplay"></div>
-
-    <script>
-        // --- CLASS IDENTIFICATION ---
-        
-        // 1. Try to read class from URL (example: entrance.html?class=barbarian)
-        const params = new URLSearchParams(window.location.search);
-        let chosenClass = params.get("class");
-
-        // 2. If not found, try localStorage
-        if (!chosenClass) {
-            chosenClass = localStorage.getItem("playerClass");
-        }
-
-        // 3. Display class if available
-        const classDisplay = document.getElementById("classDisplay");
-
-        if (chosenClass) {
-            classDisplay.innerHTML = `Chosen Class: <strong>${chosenClass.charAt(0).toUpperCase() + chosenClass.slice(1)}</strong>`;
-        } else {
-            classDisplay.innerHTML = "(No class selected)";
-        }
-
-        // --- OPTIONAL: Add your image path here ---
-        // document.getElementById("entrance-image").src = "images/dungeon_entrance.jpg";
-    </script>
-
+  </div>
 </body>
 </html>
