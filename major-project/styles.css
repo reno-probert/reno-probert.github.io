@@ -1,5 +1,5 @@
 body {
-  background: #000;
+  background: black;
   color: white;
   font-family: "Press Start 2P", "Courier New", monospace;
   display: flex;
@@ -33,9 +33,9 @@ h1 {
 }
 
 button {
-  background: black;
+  background: rgb(70, 69, 69);
   color: white;
-  border: 5px solid red;
+  border: 5px solid purple;
   padding: 10px 20px;
   margin: 6px;
   cursor: pointer;
@@ -75,8 +75,8 @@ button:active {
 }
 
 #rogue-only {
-  color: navy;
-    text-shadow: 0 0 3px navy;
+  color: rgb(4, 4, 215);
+    text-shadow: 0 0 3px rgb(4, 4, 215);
   image-rendering: pixelated;
 }
 

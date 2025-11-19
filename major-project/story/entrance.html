@@ -30,6 +30,9 @@
         // Example: only Bards can charm enemies
         if (playerClass !== "bard") {
           document.getElementById("bard-only").style.display = "none";
+
+        if (playerClass !== "rogue") {
+          document.getElementById("rogue-only").style.display = "none";
         }
       }
 
