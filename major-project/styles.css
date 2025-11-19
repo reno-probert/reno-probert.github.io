@@ -10,8 +10,8 @@ body {
 
 button img {
   display: block;
-  width: 200px;      /* increase from 64px */
-  height: 200px;     /* increase from 64px */
+  width: 200px;     
+  height: 200px;   
   margin: 0 auto 8px;
   image-rendering: pixelated;
   pointer-events: none;
