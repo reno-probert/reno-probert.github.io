@@ -8,6 +8,14 @@ body {
   image-rendering: pixelated;
 }
 
+button img {
+  display: block;
+  width: 128px;      /* increase from 64px */
+  height: 128px;     /* increase from 64px */
+  margin: 0 auto 8px;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
 #screen {
   width: 600px;
   padding: 20px;
