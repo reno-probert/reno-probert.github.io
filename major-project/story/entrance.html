@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Entrance</title>
+
+    <style>
+        body {
+            background: #0d0d0d;
+            color: #f2f2f2;
+            font-family: "Georgia", serif;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 8px #000;
+        }
+
+        .image-container {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #000;
+        }
+
+        .description {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .class-indicator {
+            margin-top: 25px;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Dungeon Entrance</h1>
+
+    <!-- ✅ PLACE YOUR IMAGE HERE -->
+    <div class="image-container">
+        <img src="" alt="Entrance Image (Add your file path)" id="entrance-image">
+    </div>
+
+    <div class="description">
+        You stand before the massive stone archway of the forgotten dungeon.  
+        The air is cold, silent, and expectant.  
+        Whatever lies beyond these ancient doors… your class will determine how you face it.
+    </div>
+
+    <div class="class-indicator" id="classDisplay"></div>
+
+    <script>
+        // --- CLASS IDENTIFICATION ---
+        
+        // 1. Try to read class from URL (example: entrance.html?class=barbarian)
+        const params = new URLSearchParams(window.location.search);
+        let chosenClass = params.get("class");
+
+        // 2. If not found, try localStorage
+        if (!chosenClass) {
+            chosenClass = localStorage.getItem("playerClass");
+        }
+
+        // 3. Display class if available
+        const classDisplay = document.getElementById("classDisplay");
+
+        if (chosenClass) {
+            classDisplay.innerHTML = `Chosen Class: <strong>${chosenClass.charAt(0).toUpperCase() + chosenClass.slice(1)}</strong>`;
+        } else {
+            classDisplay.innerHTML = "(No class selected)";
+        }
+
+        // --- OPTIONAL: Add your image path here ---
+        // document.getElementById("entrance-image").src = "images/dungeon_entrance.jpg";
+    </script>
+
+</body>
+</html>
