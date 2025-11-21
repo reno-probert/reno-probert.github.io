@@ -1,4 +1,4 @@
-      // Class helper so pages know the player's class
+      // Page can remember player's class choice
       function getClass() {
         const params = new URLSearchParams(window.location.search);
         let cls = params.get("class");
@@ -6,7 +6,7 @@
         return cls;
       }
 
-      // Optional: show class-exclusive options
+      // Hide choices that don't match player's class
       
 function setupChoices() {
   const playerClass = getClass();

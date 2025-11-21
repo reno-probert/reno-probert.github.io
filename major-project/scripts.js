@@ -1,13 +1,13 @@
 function selectClass(selected) {
-    // Save for use in future pages
+    // store player choice
     localStorage.setItem("playerClass", selected);
 
-    // Navigate to the dungeon intro page with class parameter
+    // Go to the entrance after selecting class
     window.location.href = "story/entrance.html?class=" + selected;
 }
 
 function getClass() {
-    // URL parameter takes priority
+    // URL has the class so it can go between pages
     const params = new URLSearchParams(window.location.search);
     let cls = params.get("class");
 
