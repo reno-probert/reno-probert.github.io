@@ -78,8 +78,8 @@ button:active {
 }
 
 #rogue-only {
-  color: rgb(4, 4, 215);
-    text-shadow: 0 0 3px rgb(4, 4, 215);
+  color: rgb(100, 100, 245);
+    text-shadow: 0 0 3px rgb(100, 100, 245);
   image-rendering: pixelated;
 }
 
