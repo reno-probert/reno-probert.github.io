@@ -106,11 +106,4 @@ button:active {
   gap: 8px;
 }
 
-/* animations */
-
-@keyframes flicker {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.95; }
-  70% { opacity: 0.85; }
-}
 
