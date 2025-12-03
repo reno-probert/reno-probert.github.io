@@ -114,6 +114,3 @@ button:active {
   70% { opacity: 0.85; }
 }
 
-#screen {
-  animation: flicker 0.12s infinite steps(2);
-}
