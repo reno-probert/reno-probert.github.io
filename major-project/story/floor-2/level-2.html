@@ -11,27 +11,24 @@
 <body>
     <div id="screen">
 
-        <h1>Second Level Entrance</h1>
+        <h1>Second Level</h1>
 
         <div id="story">
-            As you enter the doors of the dungeon you come to a long corridor lit by a few, flickering torches. The
-            hallway turns sharply to the right but on the left you see a locked door covered in strange runes, what do
-            you do?
+            As you reach the lower level you see a large stone chamber, overgrown with thick plant roots and moss. At
+            the end of the chamber is what appears to be a large pile of rubble blocking the only visible exit. What do you do?
         </div>
 
         <div id="choices">
 
             <!-- Normal choice -->
-            <button onclick="location.href='hallway.html?class=' + getClass()">Continue down the hallway, leaving the
-                door behind</button>
-            <button onclick="location.href='entrance-fail.html?class=' + getClass()">Flee in terror</button>
+            <button onclick="location.href='rubble.html?class=' + getClass()">Approach the rubble to try and find a way through</button>
+            <button onclick="location.href='rubble.html?class=' + getClass()">Attempt to search the room for other exits</button>
+            <button onclick="location.href='rubble-fail.html?class=' + getClass()">Flee in terror</button>
 
             <!-- Class choice -->
-            <button id="barbarian-only" onclick="location.href='inside-room.html?class=' + getClass()">Smash the door
+            <button id="barbarian-only" onclick="location.href='rubble-barbarian.html?class=' + getClass()">Attempt to smash the rubble
                 (Barbarian)</button>
 
-            <button id="rogue-only" onclick="location.href='inside-room.html?class=' + getClass()">Pick the lock
-                (Rogue)</button>
 
         </div>
 
