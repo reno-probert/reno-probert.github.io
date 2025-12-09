@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adventurer</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="../storyscripts.js"></script>
+</head>
+
+<body>
+    <div id="screen">
+
+        <h1>Adventurer</h1>
+        <div id="image">
+            <img src="../../image/adventurer.png" alt="adventurer">
+        </div>
+
+        <div id="story">
+            You use your bardic charms to breifly calm the adventurer. He struggles, seemingly battling to control his
+            own limbs, "The crystal... you must destroy the crystal." he says. You know that he can only hold himself
+            back for so long. What do you do?
+        </div>
+        <div id="choices">
+
+            <!-- Normal choice -->
+            <button onclick="location.href='grab.html?class=' + getClass()">Attempt to grab the crystal</button>
+            <button onclick="location.href='destroy.html?class=' + getClass()">Attempt to destroy the crystal</button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

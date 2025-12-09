@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Final Battle</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="../storyscripts.js"></script>
+</head>
+
+<body>
+    <div id="screen">
+
+        <h1>Final Battle</h1>
+        <div id="image">
+            <img src="../../image/adventurer.png" alt="adventurer">
+        </div>
+        <div id="story">
+            The adventurer strikes out at you viscously as you attempt to dodge his attacks. He moves with unnatural
+            speed and strength as the crystal glows on the pedestal behind him. You block and dodge but the adventurer
+            shows no sign of relenting what do you do?
+        </div>
+
+        <div id="choices">
+
+            <!-- Normal choice -->
+            <button onclick="location.href='battle-attack.html?class=' + getClass()">Attempt to attack the
+                adventurer</button>
+            <button onclick="location.href='battle-block.html?class=' + getClass()">Attempt to block the
+                adventurer</button>
+            <button onclick="location.href='battle-grab.html?class=' + getClass()">Attempt to grab the crystal</button>
+            <button onclick="location.href='destroy.html?class=' + getClass()">Attempt to attack the
+                crystal</button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
