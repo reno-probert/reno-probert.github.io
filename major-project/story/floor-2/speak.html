@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Speak</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="../storyscripts.js"></script>
+</head>
+
+<body>
+    <div id="screen">
+
+        <h1>Rock Talk</h1>
+        <div id="image">
+            <img src="../../image/golem.png" alt="golem image">
+        </div>
+        <div id="story">
+            You attempt to treat with the golem and to your surprise it responds! "To gain entrance to the next floor,
+            you must answer my riddle. If you fail, your journey ends here." The golem asks, <span style="color: yellow;">"I steal from the brave and
+            return it to cowards, I weaken steel yet strengthen resolve. You cannot kill me, but you can face me.
+            What am I?"</span>
+        </div>
+
+        <div id="choices">
+
+            <!-- Normal choice -->
+            <button onclick="location.href='wrong.html?class=' + getClass()">Darkness</button>
+            <button onclick="location.href='right.html?class=' + getClass()">Fear</button>
+            <button onclick="location.href='wrong.html?class=' + getClass()">Doubt</button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
