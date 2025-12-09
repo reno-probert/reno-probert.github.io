@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Passage</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="../storyscripts.js"></script>
+</head>
+
+<body>
+    <div id="screen">
+
+        <h1>Passage</h1>
+
+        <div id="story">
+            You exit the rubble strewn room and head through a narrow passageway ending in an old wooden door. You open
+            the door and see a dark room lit by an eerie orange glow. To your surprise standing in the room is the
+            adventurer you were sent to find! You call out and he turns, and you notice something is wrong. Orange light
+            reflects off his eyes and small orange crystals appear on his arm. Behind him you see a large orange
+            crystal. "Leave this place!" he shouts, brandishing a scimitar. What do you do?
+        </div>
+        <div id="image">
+            <img src="../../image/adventurer.png" alt="adventurer">
+        </div>
+        <div id="choices">
+
+            <!-- Normal choice -->
+            <button onclick="location.href='rubble.html?class=' + getClass()">Prepare for battle</button>
+
+            <!-- Class choice -->
+            <button id="bard-only" onclick="location.href='rubble-druid.html?class=' + getClass()">Attempt to talk him
+                down
+                (Bard)</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
