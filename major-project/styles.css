@@ -121,17 +121,19 @@ button:active {
 }
 
 /* animation*/
-body {
-  animation: crtOn 0.4s steps(3) forwards;
-  opacity: 0;
+@keyframes glow-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px #ff6600) drop-shadow(0 0 10px #ff6600);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px #ff6600) drop-shadow(0 0 30px #ff6600);
+  }
 }
 
-@keyframes crtOn {
-  0% { opacity: 0; }
-  50% { opacity: 0.3; }
-  70% { opacity: 0.1; }
-  100% { opacity: 1; }
+.glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
 }
+
 
 @media (orientation: portrait) {
 
