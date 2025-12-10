@@ -150,13 +150,13 @@ button:active {
   }
 
   button {
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 14px;
+    padding: 8px 14px;
   }
 
   #story {
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #choices {
