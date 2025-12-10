@@ -120,4 +120,17 @@ button:active {
   gap: 8px;
 }
 
-
+@media (orientation: portrait) {
+  #screen {
+    margin: 0;              
+    max-width: 100%;        
+    min-height: 100vh;     
+    padding: 10px;          
+    border-width: 3px;      
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
