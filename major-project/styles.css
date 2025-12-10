@@ -120,7 +120,7 @@ button:active {
   gap: 8px;
 }
 
-@media (max-width: 600px) {
+@media (orientation: portrait) {
 
   body {
     padding-top: 20px;
