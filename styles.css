@@ -49,11 +49,6 @@ hr {
 }
 
 
-body > {
-  max-width: 750px;
-}
-
-
 .dropdown-menu {
   display: none;
   position: absolute;
