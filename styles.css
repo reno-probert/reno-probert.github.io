@@ -38,3 +38,12 @@ a:hover {
 a:visited {
   color: #5c0305;               
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+
+h1 {
+    background-color: rgb(173, 125, 70);
+}
