@@ -51,37 +51,6 @@ hr {
 
 body > {
   max-width: 750px;
-  width: 90%;
-}
-
-
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 15px 0;
-  background: #ffffff;
-  border-bottom: 2px solid #3a7d44;
-  z-index: 999;
-}
-
-.nav-container {
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.nav-links {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-}
-
-.nav-links > li {
-  position: relative;
 }
 
 
