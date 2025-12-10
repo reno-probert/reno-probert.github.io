@@ -1,9 +1,19 @@
 body {
-    background: linear-gradient(to bottom, #000000, #f7f8f8);
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #111;
+  font-family: "Press Start 2P", monospace;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 130px;
 }
 
-
+h1, h2 {
+    color: #981e32;
+}
 
 details {
     margin: 10px 0;
