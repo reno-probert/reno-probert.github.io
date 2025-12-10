@@ -48,6 +48,10 @@ hr {
   margin: 40px 0;
 }
 
+.majorproject {
+    align-content: center;
+    max-width: 40%;
+}
 
 .dropdown-menu {
   display: none;
