@@ -1,3 +1,9 @@
+body {
+    background: linear-gradient(to bottom, #000000, #f7f8f8);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+
 
 details {
     margin: 10px 0;
