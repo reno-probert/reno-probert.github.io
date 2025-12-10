@@ -120,6 +120,19 @@ button:active {
   gap: 8px;
 }
 
+/* animation*/
+body {
+  animation: crtOn 0.4s steps(3) forwards;
+  opacity: 0;
+}
+
+@keyframes crtOn {
+  0% { opacity: 0; }
+  50% { opacity: 0.3; }
+  70% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
+
 @media (orientation: portrait) {
 
   body {
